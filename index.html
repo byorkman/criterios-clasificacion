@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criterios diagnósticos</title>
+  <meta name="description" content="Criterios diagnósticos y de clasificación en reumatología pediátrica.">
+  <meta name="theme-color" content="#a8d5c8">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <a class="portal" href="https://reumapedia.vercel.app/"><img src="img/logo.svg" alt="" width="20" height="20">ReumaPedia</a>
+      <h1>Criterios diagnósticos</h1>
+      <p class="sub">Marcar lo que tiene el paciente y ver si cumple</p>
+    </header>
+
+    <p class="aviso">Criterios pendientes de validación médica. Son criterios de clasificación: no reemplazan el criterio clínico.</p>
+
+    <nav id="selector" class="chips" aria-label="Criterio"></nav>
+
+    <section class="panel">
+      <h2 id="titulo"></h2>
+      <p id="nota" class="nota"></p>
+      <form id="form" novalidate autocomplete="off"></form>
+      <p id="fuente" class="fuente"></p>
+    </section>
+
+    <section class="panel salida">
+      <div id="resultado" class="resultado" aria-live="polite"></div>
+      <div class="acciones">
+        <button type="button" id="copiar" class="principal">Copiar resultado</button>
+        <button type="button" id="limpiar">Limpiar</button>
+      </div>
+      <p id="estado" class="estado" aria-live="polite"></p>
+    </section>
+
+    <footer>
+      <p>Los datos no se guardan ni se envían: todo se hace solo en este dispositivo.</p>
+      <p class="version">v1.0.0 · 16 oct 2026</p>
+    </footer>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
