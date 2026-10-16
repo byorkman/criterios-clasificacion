@@ -1,0 +1,10 @@
+{
+  "name": "criterios-clasificacion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Criterios diagnósticos y de clasificación en reumatología pediátrica",
+  "scripts": {
+    "test": "node --test"
+  }
+}
